@@ -1,5 +1,4 @@
-// data.js
-// Base de datos en memoria (para la tarea/proyecto)
+
 let games = [
   { id: 1, title: "FIFA 25", genre: "Deportes", price: 49990 },
   { id: 2, title: "Call of Duty", genre: "Shooter", price: 59990 },
