@@ -11,14 +11,14 @@ import org.springframework.context.annotation.Bean;
 public class GamezonebackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GamezonebackendApplication.class, args);
+        SpringApplication.run(GamezonebackendApplication.class, args); // es el punto de entrada, aquí arranca el servidor Spring Boot
     }
 
     @Bean
-    CommandLineRunner init(GameRepository repo) {
-        return args -> {
+    CommandLineRunner init(GameRepository repo) {       // es un componente que use para que se ejecuta al iniciar el backend
+        return args -> { // args es el parametro
 
-            repo.save(new Game(
+            repo.save(new Game( // el repo save me guarda el juego en la BD
                     "FIFA 23",
                     "Simulador de fútbol con equipos actualizados.",
                     "Deportes",
